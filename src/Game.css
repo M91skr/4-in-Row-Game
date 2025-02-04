@@ -1,22 +1,27 @@
+/* Define color variables for easy theme customization */
 :root {
     --background-color: cornflowerblue;
     --panel-background-color: lightgoldenrodyellow;
     --panel-border-color: burlywood;
 }
+
+/* Set background color and font styles for the body */
 body {
     background-color: var(--background-color);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* Main container for the app - currently uses absolute positioning */
 .app-container {
     width: 800px;
     height: 800px;
     position: absolute;
     left: 50%;
     top: 10%;
-    margin-left: -200px;
+    margin-left: -200px; /* Consider using transform: translateX(-50%) for better centering */
 }
 
+/* Generic panel styling */
 .panel {
     position: absolute;
     background-color: var(--panel-background-color);
@@ -24,14 +29,16 @@ body {
     z-index: 1;
 }
 
+/* Header styles - centered at the top */
 .header {
     left: 50%;
     top: 50px;
     height: 80px;
     width: 300px;
-    margin-left: -325px;
+    margin-left: -325px; /* Consider using transform: translateX(-50%) for better centering */
 }
 
+/* Center header text inside the header */
 .header-text {
     font-size: 25px;
     font-weight: bold;
@@ -40,35 +47,38 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
+/* Footer containing buttons */
 .footer {
     left: 50%;
     top: 750px;
     height: 80px;
     width: 300px;
-    margin-left: -325px;
+    margin-left: -325px; /* Again, consider using transform for centering */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two equal-sized columns */
 }
 
+/* Style for buttons in the footer */
 .footer-button {
     height: 80px;
     width: 160px;
     margin-top: 15px;
     background-color: lightblue;
     font-size: 30px;
-    -webkit-box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
     box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
     border: 5px solid chocolate;
     font-weight: bold;
 }
 
+/* Hover effect for footer buttons */
 .footer button:hover {
     background-color: chocolate;
 }
+
+/* Game board layout using CSS grid */
 .gameBoard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -77,23 +87,24 @@ body {
     width: 500px;
     position: absolute;
     left: 25%;
-    margin-left: -250px;
+    margin-left: -250px; /* Consider flexbox for better centering */
     top: 25%;
     background-color: bisque;
     border: 8px solid burlywood;
     border-radius: 8%;
-    -webkit-box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
     box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
 }
 
+/* Individual game circles */
 .gameCircle {
     width: 100px;
     height: 100px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the element circular */
     border: 5px solid black;
 }
 
+/* Styles for different player colors */
 .player_0 {
     background-color: white;
 }
