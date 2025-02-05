@@ -3,6 +3,7 @@ import { GAME_STATE_DRAW, GAME_STATE_PLAYING, GAME_STATE_WIN} from "./Constants"
 
 
 const Header = ({gameState, currentPlayer, winPlayer}) => {
+    // Function to determine what text to display based on the game state
   const renderLabel = () => {
     switch(gameState) {
       case GAME_STATE_PLAYING:
