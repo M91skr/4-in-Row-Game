@@ -1,3 +1,10 @@
+/*Constants.js - Explained the constants used in the game.
+Footer.js - Added explanations for when buttons are displayed.
+GameBoard.js - Added comments to describe game initialization, handling moves, and rendering.
+GameCircle.js - Explained how individual game circles are rendered and interacted with.
+Header.js - Clarified how the game state is displayed to users.
+App.js - Explained the main app component.*/
+
 import React, { useEffect, useState } from "react";
 import '../Game.css';
 import Header from "./Header";
